@@ -1,0 +1,5 @@
+class X:
+          def _init_(self, x):
+                self.x = x
+                
+          def
