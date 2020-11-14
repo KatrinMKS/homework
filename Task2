@@ -2,4 +2,5 @@ class X:
           def _init_(self, x):
                 self.x = x
                 
-          def
+          def check(self, a, b, c):
+                    return a + b + c == self.x
