@@ -16,3 +16,11 @@ class Wizards_Container:
             if self.wizard is None:
                 return None
             return self.wizard.magic_wand
+        
+        
+c1= Wizards_Container()
+print (c1.get())
+c1.put(1, 'Welcome to')  
+print(c1.get())
+c1.put(2, 'Hogwarts')
+print(c1.get())
