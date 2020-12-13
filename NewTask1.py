@@ -10,7 +10,7 @@ class Wizards_Container:
      def put(self, spell, magic_wand):
          if self.wizard is None:
              self.wizard = wizard(spell, magic_wand)
-         elif self.wizard.spell > spell:
+         else 
              self.wizard = wizard(spell, magic_wand)
      def get(self):
          if self.wizard is None:
