@@ -1,30 +1,42 @@
-import collections
-
 class QueueContainer:
 
     def __init__ (self):
-        self.queue = collections.deque()
+        self.queue = []
 
-    def my_append(self, element):
+    def append(self, element):
         self.element = element
         self.queue.append(self.element)
 
-    def my_popleft(self):
+    def popleft(self):
         if not self.queue:
             print ("queue is empty")
         else:
-            print(self.queue.popleft())
+            self.queue.reverse()
+            self.queue.pop()
+            self.queue.reverse()
+
+    def showQueue(self):
+        print (self.queue)
 
 queue = QueueContainer()
-#queue.my_append(10)
-#queue.my_append(20)
-#queue.my_append(30)
-#queue.my_append("hello")
-#queue.my_append("world")
-#print(queue.queue)
-#queue.my_popleft()
-#queue.my_popleft()
-#queue.my_popleft()
-#queue.my_popleft()
-#queue.my_popleft()
-#queue.my_popleft()
+queue.append(203)
+queue.showQueue()
+
+queue.append(204)
+queue.showQueue()
+
+queue.append(205)
+queue.showQueue()
+
+queue.append(206)
+queue.showQueue()
+
+queue.popleft()
+queue.showQueue()
+queue.popleft()
+queue.showQueue()
+queue.popleft()
+queue.showQueue()
+queue.popleft()
+queue.showQueue()
+queue.popleft()
