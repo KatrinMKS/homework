@@ -7,7 +7,7 @@ class Node:
 class Queue:
     def __init__(self):
         self.front = self.rear = None
-        self.size = 1
+        self.size = 0
 
     def size(self):
         return self.size
