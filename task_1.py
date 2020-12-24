@@ -21,6 +21,7 @@ class Queue:
             return
         self.rear.next = temp 
         self.rear = temp 
+        self.size = size + 1
   
     def deQueue(self): 
           
@@ -31,5 +32,6 @@ class Queue:
   
         if(self.front == None): 
             self.rear = None
+        self.size = size - 1
   
  
