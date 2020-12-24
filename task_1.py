@@ -3,17 +3,18 @@ class Node:
     def __init__(self, info): 
         self.info = info 
         self.next = None
-        
   
 class Queue: 
       
-    def __init__(self, size): 
+    def __init__(self): 
         self.front = self.rear = None
-        self.size = size
   
     def isEmpty(self): 
         return self.front == None
-      
+    
+    def size(self, size):
+        self.size = size
+            
     def enQueue(self, element): 
         temp = Node(element) 
           
