@@ -2,11 +2,11 @@ import unittest
 import collections
 from homework import Queue
 
-class TestQueueContainer(unittest.TestCase):
+class TestQueue(unittest.TestCase):
 
     def __init__(self):
         
-        newQueue = QueueContainer()
+        newQueue = Queue()
 
         newQueue.append(10)
         newQueue.append(0)
