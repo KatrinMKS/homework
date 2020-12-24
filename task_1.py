@@ -3,7 +3,7 @@ class Node:
         self.info = info
         self.next = None
 
-            
+      
 class Queue:
     def __init__(self):
         self.front = self.rear = None
