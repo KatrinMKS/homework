@@ -1,5 +1,4 @@
 import unittest
-import collections
 from homework import Queue
 
 class TestQueue(unittest.TestCase):
