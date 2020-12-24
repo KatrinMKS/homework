@@ -4,10 +4,9 @@ from homework import QueueContainer
 
 class TestQueueContainer(unittest.TestCase):
 
-    def _init_(self):
+    def __init__(self):
         
-        self.test_queue = collections.deque()
-        newQueue = QueueContainer
+        newQueue = QueueContainer()
 
         newQueue.append(10)
         newQueue.append(0)
