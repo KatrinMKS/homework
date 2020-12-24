@@ -38,4 +38,3 @@ class Queue:
         def size_clear(self, size):
             size -= 1
             return size
-        
