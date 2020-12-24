@@ -24,4 +24,5 @@ class TestQueue(unittest.TestCase):
         q.enQueue(15)
         q.enQueue(23)
         self.assertEqual(q.rear.info, 23)
-
+        
+        
