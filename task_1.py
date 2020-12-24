@@ -1,4 +1,4 @@
-class Starter: 
+class Node: 
       
     def __init__(self, info): 
         self.info = info 
@@ -12,8 +12,8 @@ class Queue:
     def isEmpty(self): 
         return self.front == None
       
-    def EnQueue(self, element): 
-        temp = Starter(element) 
+    def enQueue(self, element): 
+        temp = Node(element) 
           
         if self.rear == None: 
             self.front = self.rear = temp 
@@ -21,7 +21,7 @@ class Queue:
         self.rear.next = temp 
         self.rear = temp 
   
-    def DeQueue(self): 
+    def deQueue(self): 
           
         if self.isEmpty(): 
             return
