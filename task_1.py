@@ -15,12 +15,12 @@ class Queue:
     def size(self, size):
         self.size = size
             
-    def size_num(self, size)
+    def sizenum(self, size)
         for i in Queue:
             size++
             return
             
-    def size_clear(self, size)
+    def sizeclear(self, size)
         for i in Queue:
             size--
             return
