@@ -17,8 +17,8 @@ class Queue:
             
     def size_num(self, size):
         for i in Queue:
-            size++
-            return
+            size += 1
+            return size
             
     def size_clear(self, size):
         for i in Queue:
