@@ -20,7 +20,7 @@ class Queue:
             size++
             return
             
-    def size_num(self, size)
+    def size_clear(self, size)
         for i in Queue:
             size--
             return
