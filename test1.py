@@ -1,6 +1,6 @@
 import unittest
 import collections
-from homework import QueueContainer
+from homework import Queue
 
 class TestQueueContainer(unittest.TestCase):
 
