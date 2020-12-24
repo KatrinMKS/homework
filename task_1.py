@@ -15,6 +15,11 @@ class Queue:
     def size(self, size):
         self.size = size
             
+    def size_num(self, size)
+        for i in Queue:
+            size++
+            return
+            
     def enQueue(self, element): 
         temp = Node(element) 
           
