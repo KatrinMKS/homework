@@ -1,14 +1,15 @@
 class Node: 
       
-    def __init__(self, info, size): 
+    def __init__(self, info): 
         self.info = info 
         self.next = None
-        self.size = size
+        
   
 class Queue: 
       
-    def __init__(self): 
+    def __init__(self, size): 
         self.front = self.rear = None
+        self.size = size
   
     def isEmpty(self): 
         return self.front == None
