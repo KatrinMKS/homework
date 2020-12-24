@@ -7,10 +7,13 @@ class Node:
 class Queue:
     def __init__(self):
         self.front = self.rear = None
+
     def isEmpty(self):
         return self.front == None
+
     def size(self, size):
         self.size = size
+
     def enQueue(self, element):
         temp = Node(element)
         if self.rear == None:
