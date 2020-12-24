@@ -17,6 +17,8 @@ class Queue:
 
     def size_clear(self):
         self.size -= 1
+        if self.size < 0:
+            self.size = 0
 
     def isEmpty(self):
         return self.front is None
