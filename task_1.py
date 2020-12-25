@@ -43,4 +43,3 @@ class Queue:
         while not self.isEmpty():
             self.deQueue()
 
-
