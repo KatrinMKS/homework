@@ -15,22 +15,20 @@ class Queue:
     def size_plus(self):
         self.size += 1
 
-    def size_clear(self):
+    def size_del(self):
         self.size -= 1
-        if self.size < 0:
-            self.size = 0
 
     def isEmpty(self):
         return self.front is None
 
     def enQueue(self, element):
         temp = Node(element)
+        self.size_plus()
         if self.rear is None:
                 self.front = self.rear = temp
                 return
         self.rear.next = temp
         self.rear = temp
-        self.size_plus()
 
     def deQueue(self):
         if self.isEmpty():
@@ -39,6 +37,6 @@ class Queue:
         self.front = temp.next
         if(self.front is None):
             self.rear = None
-        self.size_clear()
+        self.size_del()
 
 
