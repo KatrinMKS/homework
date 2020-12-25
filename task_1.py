@@ -18,9 +18,6 @@ class Queue:
     def size_del(self):
         self.size -= 1
 
-    def isEmpty(self):
-        return self.front is None
-
     def enQueue(self, element):
         temp = Node(element)
         self.size_plus()
@@ -38,5 +35,12 @@ class Queue:
         if(self.front is None):
             self.rear = None
         self.size_del()
+
+    def isEmpty(self):
+        return self.front is None
+
+    def queue_clean(self):
+        while not self.isEmpty():
+            self.deQueue()
 
 
