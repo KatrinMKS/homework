@@ -14,13 +14,13 @@ class TestQueue(unittest.TestCase):
         self.assertEqual(q.size, 0)
 
     def test_deQueue(self):
-        q = Queue()
+        q = deQueue()
         q.enQueue(15)
         q.enQueue(23)
         self.assertEqual(q.front.info, 15)
 
     def test_enQueue(self):
-        q = Queue()
+        q = enQueue()
         q.enQueue(15)
         q.enQueue(23)
         self.assertEqual(q.rear.info, 23)
